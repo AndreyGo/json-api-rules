@@ -1,0 +1,271 @@
+{
+  "id": "10966",
+  "gender": {
+    "id": 1,
+    "name": "Мужчина"
+  },
+  "nationality": {
+    "id": "1",
+    "name": "Русский",
+    "sorting": "100",
+    "deleted": "0",
+    "name_female": "Русская"
+  },
+  "nationality_show_status": {
+    "id": 1,
+    "name": "Показывать мою национальность всем"
+  },
+  "religion": {
+    "id": "24",
+    "name": "Атеизм",
+    "deleted": "0",
+    "name_female": "Атеистка",
+    "name_male": "Атеист"
+  },
+  "goal": {
+    "id": 3,
+    "name": "Дружба",
+    "icon": "friendship"
+  },
+  "looking_for": {
+    "id": 3,
+    "name": "Друзей"
+  },
+  "children": {
+    "id": 1,
+    "name": "Есть"
+  },
+  "relationship": {
+    "id": 2,
+    "name": "В браке"
+  },
+  "smoking": {
+    "id": 1,
+    "name": "Не курю и не приемлю"
+  },
+  "alcohol": {
+    "id": 1,
+    "name": "Не пью"
+  },
+  "orientation": {
+    "id": 1,
+    "name": "Гетеро"
+  },
+  "age_from": 21,
+  "age_to": 30,
+  "height": 183,
+  "weight": 66,
+  "about": "Такие \"дела\". Вот.",
+  "is_premium": false,
+  "end_premium": null,
+  "last_auth": "2018-06-01 10:08:14",
+  "name": "Александр",
+  "name_genitive": "Александра",
+  "birthday": {
+    "year": "1987",
+    "month": "04",
+    "day": "04",
+    "long": "4 апреля 1987 г.",
+    "age": 31,
+    "zodiac": {
+      "name": "Овен",
+      "ico": "aries"
+    }
+  },
+  "about_raw": "Такие &quot;дела&quot;. Вот.",
+  "avatar": {
+    "small": "//img.linkyou.ru/3786461007/7395b14483e73ef2bbd4ea29c6789ac5/small.jpg",
+    "default": "//img.linkyou.ru/3786461007/7395b14483e73ef2bbd4ea29c6789ac5/default.jpg",
+    "origin": "//img.linkyou.ru/3786461007/7395b14483e73ef2bbd4ea29c6789ac5/origin.jpg"
+  },
+  "is_online": 0,
+  "online": false,
+  "career": {
+    "id": 6293,
+    "profession": "Веб-разработчик",
+    "profession_id": 2064,
+    "prof_area": "IT, интернет",
+    "prof_area_id": 79,
+    "finance": {
+      "id": 5,
+      "name": "Хорошо зарабатываю"
+    },
+    "finance_id": 5,
+    "company_name": "Лукойл",
+    "pros": "Хорошо платят",
+    "cons": "Много работы",
+    "achievements": "Повышение"
+  },
+  "location": {
+    "country_name": "Россия",
+    "country_id": 7,
+    "city_name": "Санкт-Петербург",
+    "city_id": 830
+  },
+  "education": [
+    {
+      "id": "5474",
+      "user_id": "10966",
+      "type_id": "2",
+      "institution_id": "5044",
+      "speciality_name": "Экономика и управление",
+      "speciality_id": null,
+      "active": "1",
+      "deleted": "0",
+      "last_update": "2017-01-19 15:29:14",
+      "institution_name": "МГУ",
+      "educationType": {
+        "id": 2,
+        "name": "Среднее специальное"
+      },
+      "institution": {
+        "id": "5044",
+        "user_id": "10966",
+        "city_id": null,
+        "name": "МГУ",
+        "active": "0",
+        "deleted": "0"
+      }
+    }
+  ],
+  "interests": {
+    "id": 7117,
+    "interests": "музыка,путешествия,автоспорт"
+  },
+  "languages": [
+    {
+      "id": "57532",
+      "user_id": "10966",
+      "language_id": "8",
+      "level_id": "1",
+      "deleted": "0",
+      "last_update": "2017-06-29 14:05:44",
+      "language": {
+        "id": "8",
+        "name": "Русский",
+        "sorting": "100",
+        "deleted": "0"
+      },
+      "level": {
+        "id": 1,
+        "name": "Родной язык"
+      }
+    },
+    {
+      "id": "78695",
+      "user_id": "10966",
+      "language_id": "4",
+      "level_id": "4",
+      "deleted": "0",
+      "last_update": "2017-08-21 11:06:19",
+      "language": {
+        "id": "4",
+        "name": "Английский",
+        "sorting": "90",
+        "deleted": "0"
+      },
+      "level": {
+        "id": 4,
+        "name": "Свободно владею"
+      }
+    }
+  ],
+  "music": [
+    {
+      "id": "656",
+      "user_id": "10966",
+      "link": "https://music.yandex.ru/album/2156794/track/85537",
+      "source": "https://music.yandex.ru/iframe/#track/85537/2156794",
+      "deleted": "0",
+      "datetime": "2016-11-23 12:10:50"
+    },
+    {
+      "id": "15195",
+      "user_id": "10966",
+      "link": "https://music.yandex.ru/album/2156794/track/85537",
+      "source": "https://music.yandex.ru/iframe/#track/85537",
+      "deleted": "0",
+      "datetime": "2018-05-31 11:43:43"
+    },
+    {
+      "id": "15196",
+      "user_id": "10966",
+      "link": "https://music.yandex.ru/album/2156794/track/85537",
+      "source": "https://music.yandex.ru/iframe/#track/85537",
+      "deleted": "0",
+      "datetime": "2018-05-31 11:43:44"
+    }
+  ],
+  "book": [
+    {
+      "id": "2288",
+      "user_id": "10966",
+      "book_name": "Идиот",
+      "book_author": "Достоевский",
+      "deleted": "0",
+      "last_update": "2016-12-05 15:54:56"
+    }
+  ],
+  "pet": [
+    {
+      "id": "11647",
+      "user_id": "10966",
+      "pet_name": "Василий",
+      "pet_type": "Дог",
+      "pet_description": "Большой и быстрый",
+      "pet_avatar": "https://img.linkyou.ru/3012003445/a7fc8daffb601b99b2bf6ea0d1e85b0b/origin.jpg",
+      "deleted": "0",
+      "last_update": "2018-05-31 13:46:02"
+    }
+  ],
+  "likes": {
+    "count": 110,
+    "is_liked": false
+  },
+  "favorited": "0",
+  "blacklisted": "0",
+  "rating": "Добавьте 3 фото, чтобы узнать ваш рейтинг",
+  "gifts": {
+    "count": 0,
+    "free_gifts": 0,
+    "items": []
+  },
+  "photos": {
+    "count": 2,
+    "items": [
+      {
+        "id": "13865",
+        "user_id": "10966",
+        "src": {
+          "small": "//img.linkyou.ru/1250346783/1771988592/small.jpg",
+          "default": "//img.linkyou.ru/1250346783/1771988592/default.jpg",
+          "origin": "//img.linkyou.ru/1250346783/1771988592/origin.jpg"
+        },
+        "description": "",
+        "deleted": "0",
+        "datetime": "23 нояб. 2016 г.",
+        "datetime_unix": 1479911688
+      },
+      {
+        "id": "12768",
+        "user_id": "10966",
+        "src": {
+          "small": "//img.linkyou.ru/2011623087/127010233/small.jpg",
+          "default": "//img.linkyou.ru/2011623087/127010233/default.jpg",
+          "origin": "//img.linkyou.ru/2011623087/127010233/origin.jpg"
+        },
+        "description": "",
+        "deleted": "0",
+        "datetime": "18 нояб. 2016 г.",
+        "datetime_unix": 1479466663
+      }
+    ]
+  },
+  "blogs": {
+    "count": 1,
+    "items": {
+      "count": "0",
+      "items": []
+    }
+  }
+}
