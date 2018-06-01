@@ -1,5 +1,5 @@
 {
-  "id": "10966",
+  "id": 10966,  // меняем тип string-like-number → number
   "gender": {
     "id": 1,
     "code": "male", // добавляем (male || female)
