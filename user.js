@@ -1,5 +1,6 @@
 {
   "id": 10966,  // меняем тип string-like-number → number
+  "is_top100": true,
   "gender": {
     "id": 1,
     "code": "male", // добавляем (male || female)
