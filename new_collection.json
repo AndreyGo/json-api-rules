@@ -1,0 +1,3176 @@
+{
+	"info": {
+		"_postman_id": "5b9a0a69-312e-40f1-8cab-9b9270d80bd9",
+		"name": "LINKYOU",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ArticleGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/article/2",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"article",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ArticleComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/article/2/comments",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"article",
+						"2",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ArticlesList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/articles/",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"articles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthChangeEmail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "dev@klenmarket.ru",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/auth/email",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"auth",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthChangePassword",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "current",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "password_confirm",
+							"value": "111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/auth/password",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"auth",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthForgot",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "slashinin.andrey@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/auth/forgot",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"auth",
+						"forgot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthSignin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "89260201642",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/auth/signin",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthSignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "dev@klenmarket.ru",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/auth/signup",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AutocompleteAllList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/autocomplete/cities/all?q=Москва",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"autocomplete",
+						"cities",
+						"all"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Москва"
+						}
+					]
+				},
+				"description": "http://linkyou2.klendev.ru/v2/autocomplete/languages/all/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/religions/all/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/nationality/all/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/professions/all/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/profarea/all/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/cities/all/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/age/all/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/goals/all/"
+			},
+			"response": []
+		},
+		{
+			"name": "AutocompleteList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/autocomplete/cities/",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"autocomplete",
+						"cities",
+						""
+					]
+				},
+				"description": "http://linkyou2.klendev.ru/v2/autocomplete/languages/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/religions/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/nationality/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/professions/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/profarea/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/cities/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/age/\n\nhttp://linkyou2.klendev.ru/v2/autocomplete/goals/"
+			},
+			"response": []
+		},
+		{
+			"name": "BlackList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/blacklist",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"blacklist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlackListAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/blacklist/add",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"blacklist",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlackListDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/blacklist/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"blacklist",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlockInterestingUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/users/interesting",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"users",
+						"interesting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlogsList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/blogs",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlogGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/blog/15",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"blog",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlogsComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/blog/15/comments",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"blog",
+						"15",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlogCommentAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "comment",
+							"value": "Норм",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/blog/15/comment/add",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"blog",
+						"15",
+						"comment",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlogCommentDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/blog/15/comment/85/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"blog",
+						"15",
+						"comment",
+						"85",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DialogsList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/dialogs",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"dialogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DialogRead",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/dialog/3/read",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"dialog",
+						"3",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DialogDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/dialog/3/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"dialog",
+						"3",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Favorites",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/favorites",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"favorites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FavoritesAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/favorites/add",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"favorites",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FavoritesDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/favorites/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"favorites",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiftsTree",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/gifts/",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"gifts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiftsUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/gifts/2/",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"gifts",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiftsRecommended",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/gifts/2/recommended",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"gifts",
+						"2",
+						"recommended"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiftsAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "gift_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "is_private",
+							"value": "1",
+							"description": "1 | 0",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "дарю!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/gifts/6/add",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"gifts",
+						"6",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiftDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "27",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/gifts/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"gifts",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiftRecovery",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "27",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/gifts/recovery",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"gifts",
+						"recovery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiftsUserNew",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/gifts/new",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"gifts",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guests",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/guests",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"guests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikesUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/2/likes",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"2",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikeUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/6/like",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"6",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikeYouGetList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/likeyou/list",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"likeyou",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikeYouLike",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/likeyou/like",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"likeyou",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikeYouSkip",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/likeyou/skip",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"likeyou",
+						"skip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListsCities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/lists/cities?q=Сочи",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"lists",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Сочи"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MessagesList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/dialog/416460",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"dialog",
+						"416460"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MessageGet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/message/2885632",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"message",
+						"2885632"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MessageAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Привет! Ты что не слышешь ?",
+							"type": "text"
+						},
+						{
+							"key": "pictures",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/message/send",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"message",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MessageDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2891567",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/message/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"message",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotosList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photos/2/",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photos",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotoAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "src",
+							"value": "http://img.linkyou.ru/35325616/34ac5aa2314e7ec1d3ef1d2b8ec46871/default.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photos/add",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photos",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotoGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/350519",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"350519"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotoEdit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "Это ЙА!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/350519/edit",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"350519",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotoDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/284/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"284",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotoRecovery",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/284/recovery",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"284",
+						"recovery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotoGetComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/284/comments",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"284",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotoCommentAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "comment",
+							"value": "Хыыыы",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/284/comment/add",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"284",
+						"comment",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PhotoCommentDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/284/comment/8325/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"284",
+						"comment",
+						"8325",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikesPhoto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/284/likes",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"284",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikePhoto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/photo/284/like",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"photo",
+						"284",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/users/search?looking_for=1&age_from=25&age_to=30&city=580&profession=2,7&nationality=1&religion=2&language=8",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"users",
+						"search"
+					],
+					"query": [
+						{
+							"key": "looking_for",
+							"value": "1"
+						},
+						{
+							"key": "age_from",
+							"value": "25"
+						},
+						{
+							"key": "age_to",
+							"value": "30"
+						},
+						{
+							"key": "city",
+							"value": "580"
+						},
+						{
+							"key": "profession",
+							"value": "2,7"
+						},
+						{
+							"key": "nationality",
+							"value": "1"
+						},
+						{
+							"key": "religion",
+							"value": "2"
+						},
+						{
+							"key": "language",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchListCount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/users/search/count?looking_for=1&age_from=25&age_to=30&city=580&profession=2,7&nationality=1&religion=2&language=8",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"users",
+						"search",
+						"count"
+					],
+					"query": [
+						{
+							"key": "looking_for",
+							"value": "1"
+						},
+						{
+							"key": "age_from",
+							"value": "25"
+						},
+						{
+							"key": "age_to",
+							"value": "30"
+						},
+						{
+							"key": "city",
+							"value": "580"
+						},
+						{
+							"key": "profession",
+							"value": "2,7"
+						},
+						{
+							"key": "nationality",
+							"value": "1"
+						},
+						{
+							"key": "religion",
+							"value": "2"
+						},
+						{
+							"key": "language",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TicketsSupport",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Заголовок",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Сообщение",
+							"type": "text"
+						},
+						{
+							"key": "entity",
+							"value": "user",
+							"description": "'photo', 'user', 'general'",
+							"type": "text"
+						},
+						{
+							"key": "entityId",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/tickets/support",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"tickets",
+						"support"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TicketsCooperation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Имя",
+							"type": "text"
+						},
+						{
+							"key": "contact",
+							"value": "Контактные данные",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Сообщение",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/tickets/cooperation",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"tickets",
+						"cooperation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogsList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublogs/2",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublogs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogsAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublogs/all",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublogs",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogsPopular",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublogs/popular",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublogs",
+						"popular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Это текст блога",
+							"type": "text"
+						},
+						{
+							"key": "video_link",
+							"value": "",
+							"description": "Only youtube",
+							"type": "text"
+						},
+						{
+							"key": "audio_link",
+							"value": "",
+							"description": "Yandex Music",
+							"type": "text"
+						},
+						{
+							"key": "photos",
+							"value": "",
+							"description": "array of links",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublogs/add",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublogs",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublog/7120/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublog",
+						"7120",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogEdit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "1231",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublog/7121/edit",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublog",
+						"7121",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublog/7121",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublog",
+						"7121"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogPin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublog/7121/pin",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublog",
+						"7121",
+						"pin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogUnpin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublog/7121/unpin",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublog",
+						"7121",
+						"unpin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogGetComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublog/7121/comments",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublog",
+						"7121",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogCommentAdd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "comment",
+							"value": "Yes!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublog/7121/comment/add",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublog",
+						"7121",
+						"comment",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UblogCommentDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/ublog/7121/comment/1956/delete",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"ublog",
+						"7121",
+						"comment",
+						"1956",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserActivity",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/active/switch",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"active",
+						"switch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserInvisible",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/visible/switch",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"visible",
+						"switch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserAnswers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/answers",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserComments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/comments",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserCurrent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/current",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserDelete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/delete/profile/",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"delete",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/6",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserGetShort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/6/short",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"6",
+						"short"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserLikes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/likes",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserNotifications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/notifications",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"notifications"
+					]
+				},
+				"description": "POST http://linkyou2.klendev.ru/v2/user/notifications\nFor switch notification by code"
+			},
+			"response": []
+		},
+		{
+			"name": "UsersDaily",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/users/daily",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"users",
+						"daily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsersMatched",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/users/matched",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"users",
+						"matched"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsersNew",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/users/new",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"users",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsersTop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/users/top",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"users",
+						"top"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserSympathies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/sympathies",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"sympathies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserSympathiesPopup",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/sympathies/popup",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"sympathies",
+						"popup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserUpdate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NnSGgDzo19_7PRKfOQCBbGSBCl-AZJt1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://linkyou2.klendev.ru/v2/user/update",
+					"protocol": "http",
+					"host": [
+						"linkyou2",
+						"klendev",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
